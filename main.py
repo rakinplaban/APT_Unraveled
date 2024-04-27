@@ -2,15 +2,15 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import data_cleaner
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    input_root_directory = 'D:/DU files/APT/focused/unraveled/unraveled APT/data/network-flows/Week1_Day1-2_05262021-05272021'
+    output_root_directory = 'D:/DU files/APT/focused/unraveled/unraveled APT/data/network-flows/Week1_Day1-2_05262021-05272021/cleaned'
+    data_cleaner.clean_csv_files_in_directory(input_root_directory, output_root_directory,89)
+
+    print("All CSV files cleaned successfully and saved to the output directory.")
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
